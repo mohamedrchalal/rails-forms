@@ -1,0 +1,11 @@
+<h2>Search</h2>
+<form class="js-submit" action="/" method="get">
+  <input type="text" name="q">
+  <button type="submit">Submit</button>
+</form>
+
+<br>
+
+<% @languages.each do |language| %>
+  <%= link_to language.name, language.url %>
+<% end %>

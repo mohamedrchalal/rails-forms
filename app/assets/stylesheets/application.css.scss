@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:"Lucida Console","Monaco", monospace;
+
+}
+
+nav{
+  width:33.33%;
+  height:100%;
+  position:fixed;
+  border-right:1px solid #ccc;
+  li a{
+    line-height:2.5;
+  }
+}
+
+section{
+  margin-left:33.33%;
+  padding:1em;
+  &>:first-child{
+    margin-top:0;
+  }
+}
