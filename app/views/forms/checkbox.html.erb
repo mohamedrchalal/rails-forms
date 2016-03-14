@@ -1,12 +1,27 @@
 <h2>Checkbox</h2>
 
 <form class="js-submit" action="/forms" method="post">
-  <!-- your code here -->
+  <label for="y">Handsome</label>
+  <input type="checkbox" id="y" value="group 4">
+  <label for="n">Genius</label>
+  <input type="checkbox" id="n" value="group 4">
   <button type="submit">Submit</button>
 </form>
 
 <script type="text/javascript">
   $(".js-submit").on("submit", function(event){
     event.preventDefault();
+    if ($("#y").is(':checked') && $("#n").is(':checked')){
+      alert("such a handsome genius")
+    }
+    else if ($("#y").is(':checked')){
+    alert("so handsome")
+  }
+    else if ($("#n").is(':checked')){
+    alert("such a genius")
+  }
+    else {
+      alert("please tell the truth")
+    }
   });
 </script>
